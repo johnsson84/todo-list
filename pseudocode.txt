@@ -6,6 +6,7 @@ START
       DISPLAY  promt user to type in something to the list
       INPUT  user inputs an item
       SET input added to list
+      DISPLAY   tell user what item was added
       RETURN to menu
     CASE 2
       DISPLAY  show list of items
@@ -14,7 +15,10 @@ START
       SET  delete item from list
       RETURN to menu
     CASE 3
-      DISPLAY show list of items
+      IF list is empty
+        DISPLAY list is empty
+      ELSE
+        DISPLAY show list of items
       RETURN to menu
     CASE 4
       EXIT program
