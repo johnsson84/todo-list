@@ -13,6 +13,7 @@ START
       DISPLAY  promt user to enter a number to delete from list
       INPUT  user inputs a number
       SET  delete item from list
+      DISPLAY tell user what item was deleted
       RETURN to menu
     CASE 3
       IF list is empty
