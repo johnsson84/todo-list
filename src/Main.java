@@ -19,9 +19,9 @@ public class Main {
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("TODO LIST");
         boolean isRunning = true;
         while (isRunning) {
+            System.out.println("TODO LIST");
             System.out.println("1. Add item" +
                     "\n2. Delete item" +
                     "\n3. View list" +
