@@ -1,0 +1,21 @@
+START
+  DISPLAY  display program name
+  DSIPLAY  a menu with add, remove, show list and exit program
+  INPUT  user inputs menu choice
+    CASE 1
+      DISPLAY  promt user to type in something to the list
+      INPUT  user inputs an item
+      SET input added to list
+      RETURN to menu
+    CASE 2
+      DISPLAY  show list of items
+      DISPLAY  promt user to enter a number to delete from list
+      INPUT  user inputs a number
+      SET  delete item from list
+      RETURN to menu
+    CASE 3
+      DISPLAY show list of items
+      RETURN to menu
+    CASE 4
+      EXIT program
+END
