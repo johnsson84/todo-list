@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -39,6 +40,18 @@ public class Main {
                 }
                 case "2": {
                     showList();
+                    while (!list.isEmpty()) {
+                        System.out.print("What item do you want to delete? Please enter a number: ");
+                        try {
+                            int a = (input.nextInt() - 1);
+                            list.remove(a);
+                            System.out.println("Item " + list.get(a) + " was deleted from the list.");
+                            break;
+                        }
+                        catch (InputMismatchException e) {
+                            System.out.print("Choose a number from the list, please try again: ");
+                        }
+                    }
                     break;
                 }
                 case "3": {
