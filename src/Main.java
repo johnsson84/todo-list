@@ -44,7 +44,7 @@ public class Main {
                         System.out.print("What item do you want to delete? Please enter a number: ");
                         try {
                             int a = (input.nextInt() - 1);
-                            System.out.println("Item " + list.get(a) + " was deleted from the list.\n");
+                            System.out.println("Item \"" + list.get(a) + "\" was deleted from the list.\n");
                             list.remove(a);
                             break;
                         }
