@@ -31,10 +31,16 @@ public class Main {
             System.out.println();
             switch (choice) {
                 case "1": {
-                    System.out.println("Add something to the list: ");
-                    String a = input.nextLine();
-                    list.add(a);
-                    System.out.println(a + " was added to the list!");
+                    String a = "0";
+                    while (!a.equals("")) {
+                        System.out.print("Add something to the list ( ENTER to cancel ) : ");
+                        a = input.nextLine();
+                        if (!a.equals("")) {
+                            list.add(a);
+                            System.out.println("\"" + a + "\" was added to the list!\n");
+                        }
+                    }
+
                     System.out.println();
                     break;
                 }
