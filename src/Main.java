@@ -50,8 +50,12 @@ public class Main {
                         System.out.print("What item do you want to delete? Please enter a number: ");
                         try {
                             int a = (input.nextInt() - 1);
-                            System.out.println("Item \"" + list.get(a) + "\" was deleted from the list.\n");
-                            list.remove(a);
+                            if (a >= 0 && a < list.size()) {
+                                System.out.println("Item \"" + list.get(a) + "\" was deleted from the list.\n");
+                                list.remove(a);
+                            }
+                            else
+                                System.out.println("\nMust be a number on the list!\n");
                             break;
                         }
                         catch (InputMismatchException e) {
