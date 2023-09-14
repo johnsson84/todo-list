@@ -57,6 +57,8 @@ public class Main {
                 }
                 case "3": {
                     showList();
+                    System.out.println("Please press ENTER to continue...");
+                    input.nextLine();
                     break;
                 }
                 case "4": {
@@ -65,6 +67,7 @@ public class Main {
                 }
                 default:
                     System.out.println("\nPlease enter a number from the menu...\n");
+                    break;
             }
         }
     }
